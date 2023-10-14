@@ -13,7 +13,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="610.0" prefWidth="940.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.AddItemFormController">
    <children>
       <AnchorPane prefHeight="610.0" prefWidth="940.0">
@@ -32,8 +31,8 @@
                                 <AnchorPane opacity="0.4" prefHeight="610.0" prefWidth="940.0" style="-fx-background-color: black;" />
                                 <AnchorPane layoutX="31.0" layoutY="31.0" opacity="0.54" prefHeight="555.0" prefWidth="878.0" style="-fx-background-color: white; -fx-background-position: center; -fx-background-radius: 9;">
                                  <children>
-                                    <Separator layoutX="416.0" layoutY="15.0" orientation="VERTICAL" prefHeight="278.0" prefWidth="1.0" />
-                                    <Separator layoutX="12.0" layoutY="287.0" prefHeight="18.0" prefWidth="858.0" />
+                                    <Separator layoutX="413.0" layoutY="15.0" orientation="VERTICAL" prefHeight="278.0" prefWidth="9.0" />
+                                    <Separator layoutX="12.0" layoutY="284.0" prefHeight="18.0" prefWidth="858.0" />
                                  </children>
                               </AnchorPane>
                               <JFXButton alignment="CENTER_RIGHT" layoutX="49.0" layoutY="43.0" prefHeight="36.0" prefWidth="86.0" style="-fx-background-color: black; -fx-background-radius: 5;" text="Back" textFill="WHITE">
@@ -41,22 +40,27 @@
                                     <Font name="Bookman Old Style Bold" size="14.0" />
                                  </font>
                               </JFXButton>
-                              <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="487.0" layoutY="287.0" prefHeight="30.0" prefWidth="128.0" style="-fx-background-color: black; -fx-background-radius: 5;" text="Remove Order" textFill="WHITE">
+                              <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="534.0" layoutY="287.0" prefHeight="30.0" prefWidth="81.0" style="-fx-background-color: black; -fx-background-radius: 5;" text="Print" textFill="WHITE">
                                  <font>
                                     <Font name="Bookman Old Style Bold" size="14.0" />
                                  </font>
                               </JFXButton>
-                              <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="620.0" layoutY="286.0" prefHeight="30.0" prefWidth="62.0" style="-fx-background-color: black; -fx-background-radius: 5;" text="Clear" textFill="WHITE">
+                              <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="630.0" layoutY="286.0" prefHeight="30.0" prefWidth="62.0" style="-fx-background-color: black; -fx-background-radius: 5;" text="Clear" textFill="WHITE">
                                  <font>
                                     <Font name="Bookman Old Style Bold" size="14.0" />
                                  </font>
                               </JFXButton>
-                              <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="686.0" layoutY="286.0" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: black; -fx-background-radius: 5;" text="Update" textFill="WHITE">
+                              <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="694.0" layoutY="286.0" prefHeight="30.0" prefWidth="62.0" style="-fx-background-color: black; -fx-background-radius: 5;" text="Save" textFill="WHITE">
                                  <font>
                                     <Font name="Bookman Old Style Bold" size="14.0" />
                                  </font>
                               </JFXButton>
-                              <JFXButton alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="765.0" layoutY="286.0" prefHeight="30.0" prefWidth="134.0" style="-fx-background-color: black; -fx-background-radius: 5;" text="Add to Cart" textFill="WHITE">
+                              <JFXButton alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="765.0" layoutY="286.0" prefHeight="30.0" prefWidth="126.0" style="-fx-background-color: black; -fx-background-radius: 5;" text="Add Stock" textFill="WHITE">
+                                 <font>
+                                    <Font name="Bookman Old Style Bold" size="14.0" />
+                                 </font>
+                              </JFXButton>
+                              <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="825.0" layoutY="122.0" prefHeight="27.0" prefWidth="56.0" style="-fx-background-color: black; -fx-background-radius: 5;" text="Add" textFill="WHITE">
                                  <font>
                                     <Font name="Bookman Old Style Bold" size="14.0" />
                                  </font>
@@ -65,7 +69,7 @@
                         </AnchorPane>
                         <ImageView fitHeight="27.0" fitWidth="36.0" layoutX="771.0" layoutY="287.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../Images/Add%20Shopping%20Cart.png" />
+                              <Image url="@../Images/Add.png" />
                            </image>
                         </ImageView>
                         <ImageView fitHeight="27.0" fitWidth="36.0" layoutX="55.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
@@ -86,72 +90,60 @@
                         <Font name="Bookman Old Style Bold" size="15.0" />
                      </font>
                   </Label>
-                  <Label layoutX="53.0" layoutY="161.0" text="Customer Contact :">
+                  <Label layoutX="54.0" layoutY="160.0" text="Description* :">
                      <font>
                         <Font name="Bookman Old Style Bold" size="15.0" />
                      </font>
                   </Label>
-                  <JFXTextField layoutX="213.0" layoutY="150.0" prefHeight="30.0" prefWidth="214.0" promptText="Contact" />
-                  <JFXTextField layoutX="213.0" layoutY="184.0" prefHeight="30.0" prefWidth="214.0" promptText="email@gmail.com" />
-                  <Label layoutX="53.0" layoutY="197.0" text="Customer Email* :">
+                  <JFXTextField layoutX="166.0" layoutY="151.0" prefHeight="30.0" prefWidth="270.0" promptText="Description" />
+                  <Label layoutX="56.0" layoutY="191.0" text="Qty* :">
                      <font>
                         <Font name="Bookman Old Style Bold" size="15.0" />
                      </font>
                   </Label>
-                  <Label layoutX="459.0" layoutY="117.0" text="Description* :">
+                  <JFXTextField layoutX="166.0" layoutY="186.0" prefHeight="18.0" prefWidth="70.0" promptText="0" />
+                  <Label layoutX="252.0" layoutY="195.0" text="Add Qty* :">
                      <font>
                         <Font name="Bookman Old Style Bold" size="15.0" />
                      </font>
                   </Label>
-                  <JFXTextField layoutX="579.0" layoutY="107.0" prefHeight="30.0" prefWidth="170.0" promptText="Description" />
-                  <Label layoutX="460.0" layoutY="155.0" text="Qty* :">
+                  <JFXTextField layoutX="337.0" layoutY="188.0" prefHeight="30.0" prefWidth="70.0" promptText="0" />
+                  <Label layoutX="547.0" layoutY="59.0" text="Selling Price* :">
                      <font>
                         <Font name="Bookman Old Style Bold" size="15.0" />
                      </font>
                   </Label>
-                  <JFXTextField layoutX="580.0" layoutY="143.0" prefHeight="30.0" prefWidth="69.0" promptText="0" />
-                  <Label layoutX="676.0" layoutY="155.0" text="Qty On Hand* :">
+                  <JFXTextField layoutX="667.0" layoutY="47.0" prefHeight="30.0" prefWidth="92.0" promptText="0.00" />
+                  <Label layoutX="554.0" layoutY="158.0" text="Profit :">
                      <font>
                         <Font name="Bookman Old Style Bold" size="15.0" />
                      </font>
                   </Label>
-                  <JFXTextField layoutX="803.0" layoutY="142.0" prefHeight="30.0" prefWidth="70.0" promptText="0" />
-                  <Label layoutX="562.0" layoutY="59.0" text="Selling Price* :">
+                  <JFXTextField layoutX="673.0" layoutY="152.0" prefHeight="30.0" prefWidth="92.0" promptText="0.00" />
+                  <Label layoutX="551.0" layoutY="93.0" text="Type* :">
                      <font>
                         <Font name="Bookman Old Style Bold" size="15.0" />
                      </font>
                   </Label>
-                  <JFXTextField layoutX="680.0" layoutY="47.0" prefHeight="30.0" prefWidth="92.0" promptText="0.00" />
-                  <Label layoutX="681.0" layoutY="193.0" text="Profit :">
+                  <JFXTextField layoutX="669.0" layoutY="79.0" prefHeight="30.0" prefWidth="70.0" promptText="Type" />
+                  <Label layoutX="554.0" layoutY="125.0" text="Size* :">
                      <font>
                         <Font name="Bookman Old Style Bold" size="15.0" />
                      </font>
                   </Label>
-                  <JFXTextField layoutX="740.0" layoutY="181.0" prefHeight="30.0" prefWidth="92.0" promptText="0.00" />
-                  <Label layoutX="562.0" layoutY="84.0" text="Type* :">
-                     <font>
-                        <Font name="Bookman Old Style Bold" size="15.0" />
-                     </font>
-                  </Label>
-                  <JFXTextField layoutX="669.0" layoutY="82.0" prefHeight="30.0" prefWidth="92.0" promptText="Type" />
-                  <Label layoutX="685.0" layoutY="227.0" text="Size* :">
-                     <font>
-                        <Font name="Bookman Old Style Bold" size="15.0" />
-                     </font>
-                  </Label>
-                  <JFXTextField layoutX="738.0" layoutY="216.0" prefHeight="30.0" prefWidth="92.0" promptText="Size" />
-                  <JFXTreeTableView layoutX="42.0" layoutY="336.0" prefHeight="210.0" prefWidth="858.0">
+                  <JFXTextField layoutX="672.0" layoutY="114.0" prefHeight="30.0" prefWidth="70.0" promptText="Size" />
+                  <JFXTreeTableView layoutX="42.0" layoutY="330.0" prefHeight="210.0" prefWidth="858.0">
                      <columns>
-                        <TreeTableColumn prefWidth="75.0" text="Item Code" />
-                        <TreeTableColumn prefWidth="108.7999267578125" text="Description" />
-                        <TreeTableColumn prefWidth="63.20008850097656" text="Qty" />
-                        <TreeTableColumn prefWidth="75.0" text="Unit Price" />
-                        <TreeTableColumn prefWidth="75.0" text="Date" />
-                        <TreeTableColumn prefWidth="86.39996337890625" text="Discount %" />
-                        <TreeTableColumn prefWidth="64.800048828125" text="Type" />
-                        <TreeTableColumn prefWidth="67.20001220703125" text="Size" />
-                        <TreeTableColumn prefWidth="132.79998779296875" text="Amount" />
-                        <TreeTableColumn prefWidth="75.0" text="Option" />
+                        <TreeTableColumn prefWidth="90.40003204345703" text="Item Code" />
+                        <TreeTableColumn prefWidth="143.19998168945312" text="Description" />
+                        <TreeTableColumn prefWidth="56.0" text="Qty" />
+                        <TreeTableColumn prefWidth="106.4000244140625" text="Selling Price" />
+                        <TreeTableColumn prefWidth="105.60000610351562" text="Buying Price" />
+                        <TreeTableColumn prefWidth="55.199951171875" text="Size" />
+                        <TreeTableColumn prefWidth="64.0" text="Type" />
+                        <TreeTableColumn prefWidth="72.79998779296875" text="Profit" />
+                        <TreeTableColumn prefWidth="81.5999755859375" text="Supplier ID" />
+                        <TreeTableColumn prefWidth="81.5999755859375" text="Option" />
                      </columns>
                      <columnResizePolicy>
                         <TreeTableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
@@ -159,6 +151,15 @@
                   </JFXTreeTableView>
                   <JFXComboBox layoutX="139.0" layoutY="117.0" prefHeight="30.0" prefWidth="98.0" promptText="Select ID" />
                   <JFXComboBox layoutX="245.0" layoutY="118.0" prefHeight="30.0" prefWidth="190.0" promptText="Select Supplier Name" />
+                  <JFXTextField layoutX="748.0" layoutY="79.0" prefHeight="30.0" prefWidth="70.0" promptText="Type" />
+                  <Label layoutX="54.0" layoutY="231.0" text="Buying Price* :">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField layoutX="176.0" layoutY="221.0" prefHeight="30.0" prefWidth="115.0" promptText="Buying Price" />
+                  <JFXTextField layoutX="54.0" layoutY="262.0" prefHeight="30.0" prefWidth="282.0" promptText="Search" />
+                  <JFXTextField layoutX="750.0" layoutY="114.0" prefHeight="30.0" prefWidth="70.0" promptText="Size" />
                </children>
             </AnchorPane>
          </children>
