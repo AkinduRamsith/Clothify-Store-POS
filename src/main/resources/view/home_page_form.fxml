@@ -8,137 +8,136 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.HomePageFormController">
-   <children>
-      <AnchorPane prefHeight="610.0" prefWidth="940.0">
-         <children>
-            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="940.0">
-                <children>
-                    <ImageView fitHeight="637.0" fitWidth="941.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
-                        <image>
-                            <Image url="@../Images/img.jpg" />
-                        </image>
-                    </ImageView>
-                    <AnchorPane opacity="0.4" prefHeight="610.0" prefWidth="940.0" style="-fx-background-color: black;" />
-                    <AnchorPane layoutX="115.0" layoutY="47.0" opacity="0.54" prefHeight="522.0" prefWidth="782.0" style="-fx-background-color: white; -fx-background-position: center; -fx-background-radius: 9;">
-                     <children>
-                        <JFXButton ellipsisString="" layoutX="292.0" layoutY="452.0" prefHeight="55.0" prefWidth="45.0" textFill="WHITE" textOverrun="CLIP" />
-                     </children>
-                  </AnchorPane>
-                    <ImageView fitHeight="81.0" fitWidth="100.0" layoutX="20.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
-                        <image>
-                            <Image url="@../Images/Your paragraph text 1.png" />
-                        </image>
-                    </ImageView>
-                  <JFXButton alignment="CENTER_RIGHT" layoutX="737.0" layoutY="507.0" prefHeight="46.0" prefWidth="112.0" style="-fx-background-color: black; -fx-background-radius: 5;" text="Log Out" textFill="WHITE">
-                     <font>
-                        <Font name="Bookman Old Style Bold" size="14.0" />
-                     </font>
-                  </JFXButton>
-                  <Label alignment="CENTER" layoutX="376.0" layoutY="54.0" prefHeight="38.0" prefWidth="172.0" style="-fx-letter-spacing: 10;" text="20:00:02">
-                     <font>
-                        <Font name="Bookman Old Style Bold" size="32.0" />
-                     </font>
-                  </Label>
-                  <Label alignment="CENTER" layoutX="402.0" layoutY="91.0" prefHeight="18.0" prefWidth="118.0" style="-fx-letter-spacing: 10;" text="2023-10-07">
-                     <font>
-                        <Font name="Bookman Old Style Bold" size="17.0" />
-                     </font>
-                  </Label>
-                </children>
-            </AnchorPane>
-            <AnchorPane layoutX="115.0" layoutY="47.0" prefHeight="522.0" prefWidth="246.0" style="-fx-background-radius: 5, 4; -fx-background-color: D9D9D9;" AnchorPane.leftAnchor="115.0">
-               <children>
-                  <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="16.0" layoutY="107.0" prefHeight="42.0" prefWidth="214.0" style="-fx-background-color: white; -fx-background-radius: 9;" text="Orders">
-                     <font>
-                        <Font name="Verdana Bold" size="20.0" />
-                     </font>
-                  </JFXButton>
-                  <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" contentDisplay="CENTER" layoutX="17.0" layoutY="159.0" prefHeight="42.0" prefWidth="214.0" style="-fx-background-color: white; -fx-background-radius: 9;" text="Items">
-                     <font>
-                        <Font name="Verdana Bold" size="20.0" />
-                     </font>
-                  </JFXButton>
-                  <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" contentDisplay="CENTER" layoutX="17.0" layoutY="214.0" prefHeight="42.0" prefWidth="214.0" style="-fx-background-color: white; -fx-background-radius: 9;" text="Employers" textAlignment="CENTER">
-                     <font>
-                        <Font name="Verdana Bold" size="20.0" />
-                     </font>
-                  </JFXButton>
-                  <ImageView fitHeight="36.0" fitWidth="45.0" layoutX="25.0" layoutY="162.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../Images/Coat.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="36.0" fitWidth="45.0" layoutX="25.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../Images/Profile.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="36.0" fitWidth="45.0" layoutX="23.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../Images/Shopping%20Cart.png" />
-                     </image>
-                  </ImageView>
-                  <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="17.0" layoutY="270.0" prefHeight="42.0" prefWidth="214.0" style="-fx-background-color: white; -fx-background-radius: 9;" text="Suppliers">
-                     <font>
-                        <Font name="Verdana Bold" size="20.0" />
-                     </font>
-                  </JFXButton>
-                  <ImageView fitHeight="36.0" fitWidth="45.0" layoutX="27.0" layoutY="274.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../Images/Supplier.png" />
-                     </image>
-                  </ImageView>
-                  <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="17.0" layoutY="326.0" prefHeight="42.0" prefWidth="214.0" style="-fx-background-color: white; -fx-background-radius: 9;" text="Order Details">
-                     <font>
-                        <Font name="Verdana Bold" size="20.0" />
-                     </font>
-                  </JFXButton>
-                  <ImageView fitHeight="36.0" fitWidth="45.0" layoutX="20.0" layoutY="328.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../Images/Purchase%20Order.png" />
-                     </image>
-                  </ImageView>
-                  <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="16.0" layoutY="383.0" prefHeight="42.0" prefWidth="214.0" style="-fx-background-color: white; -fx-background-radius: 9;" text="Sales Return">
-                     <font>
-                        <Font name="Verdana Bold" size="20.0" />
-                     </font>
-                  </JFXButton>
-                  <ImageView fitHeight="36.0" fitWidth="45.0" layoutX="20.0" layoutY="388.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../Images/Return%20Purchase.png" />
-                     </image>
-                  </ImageView>
-                  <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="15.0" layoutY="442.0" prefHeight="42.0" prefWidth="214.0" style="-fx-background-color: white; -fx-background-radius: 9;" text="Sales Report">
-                     <font>
-                        <Font name="Verdana Bold" size="20.0" />
-                     </font>
-                  </JFXButton>
-                  <ImageView fitHeight="36.0" fitWidth="45.0" layoutX="21.0" layoutY="445.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../Images/Total%20Sales.png" />
-                     </image>
-                  </ImageView>
-               </children>
-            </AnchorPane>
-            <PieChart fx:id="pieChartSales" layoutX="431.0" layoutY="149.0" prefHeight="307.0" prefWidth="397.0" />
-            <ImageView fitHeight="62.0" fitWidth="46.0" layoutX="406.0" layoutY="503.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../Images/Calculator.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="38.0" fitWidth="36.0" layoutX="745.0" layoutY="512.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../Images/Logout.png" />
-               </image>
-            </ImageView>
-         </children>
-      </AnchorPane>
-      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="169.0" layoutY="48.0" prefHeight="88.0" prefWidth="142.0" text="Clothify Store" textAlignment="CENTER" wrapText="true">
-         <font>
-            <Font name="Script MT Bold" size="33.0" />
-         </font>
-      </Label>
-   </children>
+    <children>
+        <AnchorPane prefHeight="610.0" prefWidth="940.0">
+            <children>
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="940.0">
+                    <children>
+                        <ImageView fitHeight="637.0" fitWidth="941.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Images/img.jpg" />
+                            </image>
+                        </ImageView>
+                        <AnchorPane opacity="0.4" prefHeight="610.0" prefWidth="940.0" style="-fx-background-color: black;" />
+                        <AnchorPane layoutX="115.0" layoutY="47.0" opacity="0.54" prefHeight="522.0" prefWidth="782.0" style="-fx-background-color: white; -fx-background-position: center; -fx-background-radius: 9;">
+                            <children>
+                                <JFXButton ellipsisString="" layoutX="292.0" layoutY="452.0" prefHeight="55.0" prefWidth="45.0" textFill="WHITE" textOverrun="CLIP" />
+                            </children>
+                        </AnchorPane>
+                        <ImageView fitHeight="81.0" fitWidth="100.0" layoutX="20.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Images/Your paragraph text 1.png" />
+                            </image>
+                        </ImageView>
+                        <JFXButton alignment="CENTER_RIGHT" layoutX="737.0" layoutY="507.0" onAction="#btnLogOutOnAction" prefHeight="46.0" prefWidth="112.0" style="-fx-background-color: black; -fx-background-radius: 5;" text="Log Out" textFill="WHITE">
+                            <font>
+                                <Font name="Bookman Old Style Bold" size="14.0" />
+                            </font>
+                        </JFXButton>
+                        <Label fx:id="lblTime" alignment="CENTER" layoutX="376.0" layoutY="54.0" prefHeight="38.0" prefWidth="172.0" style="-fx-letter-spacing: 10;" text="20:00:02">
+                            <font>
+                                <Font name="Bookman Old Style Bold" size="32.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="lblDate" alignment="CENTER" layoutX="402.0" layoutY="91.0" prefHeight="18.0" prefWidth="118.0" style="-fx-letter-spacing: 10;">
+                            <font>
+                                <Font name="Bookman Old Style Bold" size="17.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+                <AnchorPane layoutX="115.0" layoutY="47.0" prefHeight="522.0" prefWidth="246.0" style="-fx-background-radius: 5, 4; -fx-background-color: D9D9D9;" AnchorPane.leftAnchor="115.0">
+                    <children>
+                        <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="16.0" layoutY="107.0" onAction="#btnOrderFormOnAction" prefHeight="42.0" prefWidth="214.0" style="-fx-background-color: white; -fx-background-radius: 9;" text="Orders">
+                            <font>
+                                <Font name="Verdana Bold" size="20.0" />
+                            </font>
+                        </JFXButton>
+                        <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" contentDisplay="CENTER" layoutX="17.0" layoutY="159.0" onAction="#btnItemFormOnAction" prefHeight="42.0" prefWidth="214.0" style="-fx-background-color: white; -fx-background-radius: 9;" text="Items">
+                            <font>
+                                <Font name="Verdana Bold" size="20.0" />
+                            </font>
+                        </JFXButton>
+                        <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" contentDisplay="CENTER" layoutX="17.0" layoutY="214.0" onAction="#btnEmployerFormOnAction" prefHeight="42.0" prefWidth="214.0" style="-fx-background-color: white; -fx-background-radius: 9;" text="Employers" textAlignment="CENTER">
+                            <font>
+                                <Font name="Verdana Bold" size="20.0" />
+                            </font>
+                        </JFXButton>
+                        <ImageView fitHeight="36.0" fitWidth="45.0" layoutX="25.0" layoutY="162.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Images/Coat.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="36.0" fitWidth="45.0" layoutX="25.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Images/Profile.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="36.0" fitWidth="45.0" layoutX="23.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Images/Shopping%20Cart.png" />
+                            </image>
+                        </ImageView>
+                        <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="17.0" layoutY="270.0" onAction="#btnSupplierFormOnAction" prefHeight="42.0" prefWidth="214.0" style="-fx-background-color: white; -fx-background-radius: 9;" text="Suppliers">
+                            <font>
+                                <Font name="Verdana Bold" size="20.0" />
+                            </font>
+                        </JFXButton>
+                        <ImageView fitHeight="36.0" fitWidth="45.0" layoutX="27.0" layoutY="274.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Images/Supplier.png" />
+                            </image>
+                        </ImageView>
+                        <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="17.0" layoutY="326.0" onAction="#btnOrderDetailFormOnAction" prefHeight="42.0" prefWidth="214.0" style="-fx-background-color: white; -fx-background-radius: 9;" text="Order Details">
+                            <font>
+                                <Font name="Verdana Bold" size="20.0" />
+                            </font>
+                        </JFXButton>
+                        <ImageView fitHeight="36.0" fitWidth="45.0" layoutX="20.0" layoutY="328.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Images/Purchase%20Order.png" />
+                            </image>
+                        </ImageView>
+                        <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="16.0" layoutY="383.0" onAction="#btnSalesReturnFormOnAction" prefHeight="42.0" prefWidth="214.0" style="-fx-background-color: white; -fx-background-radius: 9;" text="Sales Return">
+                            <font>
+                                <Font name="Verdana Bold" size="20.0" />
+                            </font>
+                        </JFXButton>
+                        <ImageView fitHeight="36.0" fitWidth="45.0" layoutX="20.0" layoutY="388.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Images/Return%20Purchase.png" />
+                            </image>
+                        </ImageView>
+                        <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="15.0" layoutY="442.0" onAction="#btnSalesReportOnAction" prefHeight="42.0" prefWidth="214.0" style="-fx-background-color: white; -fx-background-radius: 9;" text="Sales Report">
+                            <font>
+                                <Font name="Verdana Bold" size="20.0" />
+                            </font>
+                        </JFXButton>
+                        <ImageView fitHeight="36.0" fitWidth="45.0" layoutX="21.0" layoutY="445.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../Images/Total%20Sales.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </AnchorPane>
+                <PieChart fx:id="pieChartSales" layoutX="431.0" layoutY="149.0" prefHeight="307.0" prefWidth="397.0" />
+                <ImageView fitHeight="38.0" fitWidth="36.0" layoutX="745.0" layoutY="512.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Images/Logout.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="62.0" fitWidth="46.0" layoutX="406.0" layoutY="503.0" onMouseClicked="#btnCalculatorOnAction" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../Images/Calculator.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="169.0" layoutY="48.0" prefHeight="88.0" prefWidth="142.0" text="Clothify Store" textAlignment="CENTER" wrapText="true">
+            <font>
+                <Font name="Script MT Bold" size="33.0" />
+            </font>
+        </Label>
+    </children>
 </AnchorPane>
