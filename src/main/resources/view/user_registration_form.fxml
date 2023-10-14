@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="610.0" prefWidth="940.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.icet.controller.UserRegistrationFormController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="940.0">
+          <children>
+              <ImageView fitHeight="637.0" fitWidth="941.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@../Images/img.jpg" />
+                  </image>
+              </ImageView>
+              <AnchorPane opacity="0.4" prefHeight="610.0" prefWidth="940.0" style="-fx-background-color: black;" />
+              <AnchorPane layoutX="162.0" layoutY="47.0" opacity="0.54" prefHeight="522.0" prefWidth="632.0" style="-fx-background-color: white; -fx-background-position: center; -fx-background-radius: 9;">
+               <children>
+                  <JFXTextField alignment="CENTER" focusColor="#0040ff" layoutX="91.0" layoutY="191.0" prefHeight="30.0" prefWidth="71.0" promptText="x x x x" unFocusColor="BLACK">
+                     <font>
+                        <Font name="Arial Narrow" size="13.600000381469727" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </JFXTextField>
+               </children>
+            </AnchorPane>
+              <JFXButton layoutX="656.0" layoutY="189.0" prefHeight="39.0" prefWidth="79.0" style="-fx-background-color: black; -fx-background-radius: 5;" text="Check" textFill="WHITE">
+                  <font>
+                      <Font name="System Bold" size="13.600000381469727" />
+                  </font>
+              </JFXButton>
+              <JFXButton layoutX="562.0" layoutY="482.0" prefHeight="31.0" prefWidth="62.0" style="-fx-background-color: black; -fx-background-radius: 5;" text="Back" textFill="WHITE">
+                  <font>
+                      <Font name="System Bold" size="13.600000381469727" />
+                  </font>
+              </JFXButton>
+              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="338.0" layoutY="65.0" prefHeight="32.0" prefWidth="261.0" style="-fx-font-style: kadwa;" text="User Registration">
+                  <font>
+                      <Font name="Bookman Old Style Bold" size="26.0" />
+                  </font>
+              </Label>
+              <Label layoutX="202.0" layoutY="116.0" text="Admin Username* :">
+                  <font>
+                      <Font name="Bookman Old Style Bold" size="15.0" />
+                  </font>
+              </Label>
+              <JFXTextField focusColor="#0040ff" layoutX="363.0" layoutY="105.0" prefHeight="30.0" prefWidth="276.0" promptText="admin@gmail.com" style="-fx-text-inner-color: white;" unFocusColor="BLACK">
+                  <font>
+                      <Font name="Arial Narrow" size="13.600000381469727" />
+                  </font>
+              </JFXTextField>
+              <JFXTextField focusColor="#0044ff" layoutX="363.0" layoutY="281.0" prefHeight="30.0" prefWidth="276.0" promptText="username" style="-fx-text-inner-color: white;" unFocusColor="BLACK">
+                  <font>
+                      <Font name="Arial Narrow" size="13.600000381469727" />
+                  </font>
+              </JFXTextField>
+              <ImageView fitHeight="81.0" fitWidth="100.0" layoutX="20.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@../Images/Your paragraph text 1.png" />
+                  </image>
+              </ImageView>
+            <Label layoutX="200.0" layoutY="148.0" text="Admin Password* :">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="15.0" />
+               </font>
+            </Label>
+            <JFXTextField focusColor="#0040ff" layoutX="363.0" layoutY="140.0" prefHeight="30.0" prefWidth="276.0" promptText="password" style="-fx-text-inner-color: white;" unFocusColor="BLACK">
+               <font>
+                  <Font name="Arial Narrow" size="13.600000381469727" />
+               </font>
+            </JFXTextField>
+            <JFXCheckBox checkedColor="#18109c" layoutX="361.0" layoutY="175.0" prefHeight="20.0" prefWidth="126.0" text="show password" unCheckedColor="#534f4f">
+               <font>
+                  <Font name="Bookshelf Symbol 7" size="13.600000381469727" />
+               </font>
+            </JFXCheckBox>
+            <Label layoutX="200.0" layoutY="248.0" text="OTP* :">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="15.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="365.0" layoutY="233.0" prefHeight="39.0" prefWidth="79.0" style="-fx-background-color: black; -fx-background-radius: 5;" text="Send" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.600000381469727" />
+               </font>
+            </JFXButton>
+            <Label layoutX="517.0" layoutY="249.0" text="User Type* :">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="15.0" />
+               </font>
+            </Label>
+            <JFXComboBox layoutX="619.0" layoutY="240.0" prefHeight="30.0" prefWidth="105.0" promptText="Select" unFocusColor="BLACK" visibleRowCount="2" />
+            <Label layoutX="196.0" layoutY="293.0" text="New Username* :">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="196.0" layoutY="329.0" text="Email* :">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="15.0" />
+               </font>
+            </Label>
+            <JFXTextField focusColor="#0044ff" layoutX="364.0" layoutY="317.0" prefHeight="30.0" prefWidth="276.0" promptText="user@gmail.com" style="-fx-text-inner-color: white;" unFocusColor="BLACK">
+               <font>
+                  <Font name="Arial Narrow" size="13.600000381469727" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="197.0" layoutY="369.0" text="Password* :">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="15.0" />
+               </font>
+            </Label>
+            <JFXTextField focusColor="#0044ff" layoutX="365.0" layoutY="360.0" prefHeight="30.0" prefWidth="276.0" promptText="password" style="-fx-text-inner-color: white;" unFocusColor="BLACK">
+               <font>
+                  <Font name="Arial Narrow" size="13.600000381469727" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="195.0" layoutY="412.0" text="Confirm Password* :">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="15.0" />
+               </font>
+            </Label>
+            <JFXTextField focusColor="#0044ff" layoutX="364.0" layoutY="406.0" prefHeight="30.0" prefWidth="276.0" promptText="password" style="-fx-text-inner-color: white;" unFocusColor="BLACK">
+               <font>
+                  <Font name="Arial Narrow" size="13.600000381469727" />
+               </font>
+            </JFXTextField>
+            <JFXButton layoutX="644.0" layoutY="483.0" prefHeight="31.0" prefWidth="71.0" style="-fx-background-color: black; -fx-background-radius: 5;" text="Create" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.600000381469727" />
+               </font>
+            </JFXButton>
+            <JFXCheckBox checkedColor="#18109c" layoutX="362.0" layoutY="447.0" prefHeight="20.0" prefWidth="126.0" text="show password" unCheckedColor="#534f4f">
+               <font>
+                  <Font name="Bookshelf Symbol 7" size="13.600000381469727" />
+               </font>
+            </JFXCheckBox>
+          </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
