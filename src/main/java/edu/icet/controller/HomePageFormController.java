@@ -127,7 +127,7 @@ public class HomePageFormController implements Initializable {
 
     public void btnSupplierFormOnAction(ActionEvent actionEvent) {
         try {
-            parent= FXMLLoader.load(getClass().getResource("/view/supplier_form.fxmll"));
+            parent= FXMLLoader.load(getClass().getResource("/view/supplier_form.fxml"));
             stage= (Stage) ((Node)actionEvent.getSource()).getScene().getWindow();
             scene=new Scene(parent);
 
