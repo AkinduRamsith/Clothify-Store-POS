@@ -1,4 +1,4 @@
-package db;
+package edu.icet.db;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -9,7 +9,7 @@ public class DBConnection {
     private static Connection connection;
     private DBConnection() throws ClassNotFoundException, SQLException {
         Class.forName("com.mysql.cj.jdbc.Driver");
-        connection= DriverManager.getConnection("jdbc:mysql://localhost/ThogaKade", "root", "akindu123");
+        connection= DriverManager.getConnection("jdbc:mysql://localhost/ClothfyStore", "root", "akindu123");
     }
     public Connection getConnection(){
         return connection;
