@@ -4,9 +4,11 @@ import com.jfoenix.controls.*;
 import com.jfoenix.controls.datamodels.treetable.RecursiveTreeObject;
 import edu.icet.db.DBConnection;
 import edu.icet.model.Employer;
+import edu.icet.model.Item;
 import edu.icet.model.Supplier;
 import edu.icet.model.tm.EmployerTm;
 import edu.icet.model.tm.SupplierTm;
+import edu.icet.model.tm.SuppliesTm;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
@@ -45,6 +47,10 @@ public class SupplierFormController implements Initializable {
     public JFXTextField txtSupplierName;
     public JFXTextField txtSupplierEmail;
     public JFXTextField txtSupplierCompany;
+    public JFXTreeTableView<SuppliesTm> tblSupplies;
+    public TreeTableColumn colItemCode;
+    public TreeTableColumn colItemDescription;
+    public TreeTableColumn colItemQtyOnHand;
     @FXML
     private TreeTableColumn colSupplierCompany;
 
@@ -229,6 +235,10 @@ public class SupplierFormController implements Initializable {
         colSupplierEmail.setCellValueFactory(new TreeItemPropertyValueFactory<>("email"));
         colSupplierOption.setCellValueFactory(new TreeItemPropertyValueFactory<>("btnDelete"));
 
+        colItemCode.setCellValueFactory(new TreeItemPropertyValueFactory<>("itemCode"));
+        colItemDescription.setCellValueFactory(new TreeItemPropertyValueFactory<>("description"));
+        colItemQtyOnHand.setCellValueFactory(new TreeItemPropertyValueFactory<>("qty"));
+
         tblSupplier.getSelectionModel().selectedItemProperty().addListener((observableValue, oldValue, newValue) ->{
             if (newValue!=null){
                 setData(newValue);
@@ -256,6 +266,25 @@ public class SupplierFormController implements Initializable {
         txtSupplierContact.setText(value.getValue().getContact());
         txtSupplierCompany.setText(value.getValue().getCompany());
         txtSupplierEmail.setText(value.getValue().getEmail());
+        setSupplies(value.getValue().getSupplierId());
+    }
+
+    private void setSupplies(String supplierId) {
+        ObservableList<SuppliesTm> list=FXCollections.observableArrayList();
+        try {
+            for (Item item :AddItemFormController.getItemsBySupplierId(supplierId) ) {
+              list.add(new SuppliesTm(
+                      item.getItemCode(), item.getDescription(),item.getQtyOnHand()
+                      )
+
+              );
+            }
+            TreeItem<SuppliesTm> treeItem=new RecursiveTreeItem<>(list,RecursiveTreeObject::getChildren);
+            tblSupplies.setRoot(treeItem);
+            tblSupplies.setShowRoot(false);
+        } catch (SQLException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 
     public static Supplier searchSupplierById(String supId) throws SQLException, ClassNotFoundException {

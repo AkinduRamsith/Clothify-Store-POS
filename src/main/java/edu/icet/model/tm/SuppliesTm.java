@@ -1,5 +1,6 @@
-package edu.icet.model;
+package edu.icet.model.tm;
 
+import com.jfoenix.controls.datamodels.treetable.RecursiveTreeObject;
 import lombok.*;
 
 @AllArgsConstructor
@@ -7,7 +8,7 @@ import lombok.*;
 @Getter
 @Setter
 @ToString
-public class Supplies {
+public class SuppliesTm extends RecursiveTreeObject<SuppliesTm> {
     private String itemCode;
     private String description;
     private int qty;
