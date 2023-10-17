@@ -233,11 +233,12 @@ public class AddItemFormController implements Initializable {
                 Double.parseDouble(txtBuyingPrice.getText()),
                 cmdItemType.getValue().toString(),
                 cmdItemSize.getValue().toString(),
-                cmdSupplierID.getValue().toString()
+                cmdSupplierID.getValue().toString(),
+                Double.parseDouble(txtProfit.getText())
         );
 
         try {
-            boolean isAdded = CrudUtil.execute("INSERT INTO item VALUES(?,?,?,?,?,?,?,?)",
+            boolean isAdded = CrudUtil.execute("INSERT INTO item VALUES(?,?,?,?,?,?,?,?,?)",
                     item.getItemCode(),
                     item.getDescription(),
                     item.getQtyOnHand(),
@@ -245,7 +246,8 @@ public class AddItemFormController implements Initializable {
                     item.getBuyingPrice(),
                     item.getType(),
                     item.getSize(),
-                    item.getSupplierId()
+                    item.getSupplierId(),
+                    item.getProfit()
             );
 
             if (isAdded) {
@@ -273,6 +275,7 @@ public class AddItemFormController implements Initializable {
         txtItemSize.clear();
 
 
+
     }
 
     public static List<Item> getItemsBySupplierId(String id) throws SQLException, ClassNotFoundException {
@@ -287,7 +290,8 @@ public class AddItemFormController implements Initializable {
                     resultSet.getDouble(5),
                     resultSet.getString(6),
                     resultSet.getString(7),
-                    resultSet.getString(8)
+                    resultSet.getString(8),
+                    resultSet.getDouble(9)
             ));
         }
         return list;

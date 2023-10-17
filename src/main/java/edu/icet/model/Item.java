@@ -16,5 +16,6 @@ public class Item {
     private String type;
     private String size;
     private String supplierId;
+    private double profit;
 
 }
