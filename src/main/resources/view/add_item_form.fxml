@@ -55,12 +55,12 @@
                                                 <Font name="Bookman Old Style Bold" size="14.0" />
                                             </font>
                                         </JFXButton>
-                                        <JFXButton alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="765.0" layoutY="286.0" prefHeight="30.0" prefWidth="126.0" style="-fx-background-color: black; -fx-background-radius: 5;" text="Add Stock" textFill="WHITE">
+                                        <JFXButton fx:id="btnAddStock" alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="765.0" layoutY="286.0" prefHeight="30.0" prefWidth="126.0" style="-fx-background-color: black; -fx-background-radius: 5;" text="Add Stock" textFill="WHITE">
                                             <font>
                                                 <Font name="Bookman Old Style Bold" size="14.0" />
                                             </font>
                                         </JFXButton>
-                                        <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="825.0" layoutY="122.0" prefHeight="27.0" prefWidth="56.0" style="-fx-background-color: black; -fx-background-radius: 5;" text="Add" textFill="WHITE">
+                                        <JFXButton fx:id="btnAdd" alignment="CENTER" contentDisplay="CENTER" layoutX="825.0" layoutY="122.0" onAction="#btnAddOnAction" prefHeight="27.0" prefWidth="56.0" style="-fx-background-color: black; -fx-background-radius: 5;" text="Add" textFill="WHITE">
                                             <font>
                                                 <Font name="Bookman Old Style Bold" size="14.0" />
                                             </font>
@@ -84,7 +84,7 @@
                                 <Font name="Bookman Old Style Bold" size="15.0" />
                             </font>
                         </Label>
-                        <JFXTextField layoutX="190.0" layoutY="81.0" prefHeight="30.0" prefWidth="170.0" promptText="Item Code" />
+                        <JFXTextField fx:id="txtItemCode" layoutX="190.0" layoutY="81.0" prefHeight="30.0" prefWidth="170.0" promptText="Item Code" />
                         <Label layoutX="54.0" layoutY="130.0" text="Supplier* :">
                             <font>
                                 <Font name="Bookman Old Style Bold" size="15.0" />
@@ -107,19 +107,19 @@
                                 <Font name="Bookman Old Style Bold" size="15.0" />
                             </font>
                         </Label>
-                        <JFXTextField layoutX="337.0" layoutY="188.0" prefHeight="30.0" prefWidth="70.0" promptText="0" />
+                        <JFXTextField fx:id="txtAddQty" layoutX="337.0" layoutY="188.0" prefHeight="30.0" prefWidth="70.0" promptText="0" />
                         <Label layoutX="547.0" layoutY="59.0" text="Selling Price* :">
                             <font>
                                 <Font name="Bookman Old Style Bold" size="15.0" />
                             </font>
                         </Label>
-                        <JFXTextField layoutX="667.0" layoutY="47.0" prefHeight="30.0" prefWidth="92.0" promptText="0.00" />
+                        <JFXTextField fx:id="txtSellingPrice" layoutX="667.0" layoutY="47.0" prefHeight="30.0" prefWidth="92.0" promptText="0.00" />
                         <Label layoutX="554.0" layoutY="158.0" text="Profit :">
                             <font>
                                 <Font name="Bookman Old Style Bold" size="15.0" />
                             </font>
                         </Label>
-                        <JFXTextField layoutX="673.0" layoutY="152.0" prefHeight="30.0" prefWidth="92.0" promptText="0.00" />
+                        <JFXTextField fx:id="txtProfit" layoutX="673.0" layoutY="152.0" prefHeight="30.0" prefWidth="92.0" promptText="0.00" />
                         <Label layoutX="551.0" layoutY="93.0" text="Type* :">
                             <font>
                                 <Font name="Bookman Old Style Bold" size="15.0" />
@@ -147,21 +147,21 @@
                                 <TreeTableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
                             </columnResizePolicy>
                         </JFXTreeTableView>
-                        <JFXComboBox layoutX="139.0" layoutY="117.0" prefHeight="30.0" prefWidth="98.0" promptText="Select ID" />
-                        <JFXComboBox layoutX="245.0" layoutY="118.0" prefHeight="30.0" prefWidth="190.0" promptText="Select Supplier Name" />
-                        <JFXTextField layoutX="748.0" layoutY="79.0" prefHeight="30.0" prefWidth="70.0" promptText="Type" />
+                        <JFXComboBox fx:id="cmdSupplierID" layoutX="139.0" layoutY="117.0" onAction="#cmdSupplierIDOnAction" prefHeight="30.0" prefWidth="133.0" promptText="Select ID" />
+                        <JFXComboBox fx:id="cmdSupplierName" layoutX="276.0" layoutY="118.0" onAction="#cmdSupplierNameOnAction" prefHeight="30.0" prefWidth="159.0" promptText="Select Supplier Name" />
+                        <JFXTextField fx:id="txtItemType" layoutX="748.0" layoutY="79.0" prefHeight="30.0" prefWidth="70.0" promptText="Type" />
                         <Label layoutX="54.0" layoutY="231.0" text="Buying Price* :">
                             <font>
                                 <Font name="Bookman Old Style Bold" size="15.0" />
                             </font>
                         </Label>
-                        <JFXTextField layoutX="176.0" layoutY="221.0" prefHeight="30.0" prefWidth="115.0" promptText="Buying Price" />
+                        <JFXTextField fx:id="txtBuyingPrice" layoutX="176.0" layoutY="221.0" prefHeight="30.0" prefWidth="115.0" promptText="Buying Price" />
                         <JFXTextField layoutX="54.0" layoutY="262.0" prefHeight="30.0" prefWidth="282.0" promptText="Search" />
-                        <JFXTextField layoutX="750.0" layoutY="114.0" prefHeight="30.0" prefWidth="70.0" promptText="Size" />
+                        <JFXTextField fx:id="txtItemSize" layoutX="750.0" layoutY="114.0" prefHeight="30.0" prefWidth="70.0" promptText="Size" />
                     </children>
                 </AnchorPane>
-            <JFXComboBox layoutX="630.0" layoutY="78.0" prefHeight="30.0" prefWidth="108.0" promptText="Type" />
-            <JFXComboBox layoutX="632.0" layoutY="113.0" prefHeight="30.0" prefWidth="108.0" promptText="Size" />
+                <JFXComboBox fx:id="cmdItemType" layoutX="630.0" layoutY="78.0" prefHeight="30.0" prefWidth="108.0" promptText="Type" />
+                <JFXComboBox fx:id="cmdItemSize" layoutX="632.0" layoutY="113.0" prefHeight="30.0" prefWidth="108.0" promptText="Size" />
             </children>
         </AnchorPane>
     </children>
